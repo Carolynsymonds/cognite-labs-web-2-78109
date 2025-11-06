@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cognite Labs Design System */
+    /* Background colors */
+    --background: 0 0% 98%; /* Near white #FAFAFA */
+    --foreground: 0 0% 10%; /* Deep black #1A1A1A */
+
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary = Confident green accent */
+    --primary: 99 17% 55%; /* #85A17A - RGB(133, 161, 122) */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary = Cool light gray accent */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 10%;
+
+    /* Warm grey for complementary text */
+    --warm-grey: 30 8% 50%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 99 17% 55%;
+
+    --radius: 0.75rem;
+
+    /* Typography - font families are set in body */
+    --font-heading: 'Figtree', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Sidebar (not used in this design) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Figtree', sans-serif;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold leading-[1.2];
+  }
+
+  p {
+    @apply text-base md:text-lg leading-[1.6] font-normal;
+    color: hsl(0 0% 10%);
+  }
+}
