@@ -5,7 +5,7 @@ import { Target as FocusIcon, Users, Rocket, Trophy } from "@phosphor-icons/reac
 
 const Path = () => {
   return (
-    <div className="min-h-screen py-16 md:py-24">
+    <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-6">Don't Just Adapt to the AI Era. Lead It.</h1>

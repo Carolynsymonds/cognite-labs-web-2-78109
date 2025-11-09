@@ -5,7 +5,7 @@ import { BookOpen, Lightning, Trophy } from "@phosphor-icons/react";
 
 const SkillsLab = () => {
   return (
-    <div className="min-h-screen py-16 md:py-24">
+    <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-6">The AI Product Manager Skills Lab: <span className="text-muted-foreground">From Theory to Impact to Future Career</span></h1>

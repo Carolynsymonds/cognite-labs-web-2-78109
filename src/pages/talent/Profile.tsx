@@ -5,7 +5,7 @@ import { CheckCircle } from "@phosphor-icons/react";
 import carolynProfile from "@/assets/carolyn-profile.png";
 const Profile = () => {
   const profileCriteria = ["Proven Experience: You have 5+ years of professional experience.", "Core Skills: You will learn the rounded skills of an AI Product Manager but we usually take on candidates with a strong foundation in a core component such as Data, Engineering, Product or Delivery in technology environment.", "AI & Tech Passion: You are comfortable with modern tech tools and have a genuine passion for learning and applying new AI tools, platforms, and technology.", "Commercial Literacy: You understand and can demonstrate an understanding of key commercial concepts including business casing, ROI and value propositions.", "An Outcomes-First Mindset: You are accountable for delivering measurable results, not just 'things'. You are motivated by seeing your work create tangible business impact and have an entrepreneurial mindset."];
-  return <div className="min-h-screen py-16 md:py-24">
+  return <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-6">The Profile of a Future AI Leader</h1>

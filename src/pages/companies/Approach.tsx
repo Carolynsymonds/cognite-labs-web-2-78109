@@ -6,7 +6,7 @@ import embedCapabilityImage from "@/assets/approach-step3-embed-capability.png";
 import ongoingSupportImage from "@/assets/approach-step4-ongoing-support.png";
 import sustainableValueImage from "@/assets/approach-step5-sustainable-value.png";
 const Approach = () => {
-  return <div className="min-h-screen py-16 md:py-24">
+  return <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-6">A Unique Engine for AI Transformation</h1>
