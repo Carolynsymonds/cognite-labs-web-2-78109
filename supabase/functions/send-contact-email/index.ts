@@ -61,8 +61,8 @@ const handler = async (req: Request): Promise<Response> => {
       console.error("Rate limit check error:", rateLimitError);
       // Continue with request if rate limit check fails (fail open)
     } else if (rateLimitData) {
-      // Check if limit exceeded (5 submissions per hour)
-      if (rateLimitData.submission_count >= 5) {
+      // Check if limit exceeded (10 submissions per hour)
+      if (rateLimitData.submission_count >= 10) {
         console.warn("Rate limit exceeded for IP:", ipAddress);
         return new Response(
           JSON.stringify({ 
