@@ -19,7 +19,7 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-[60px] lg:py-0">
           <div className="grid grid-cols-1 md:grid-cols-[12fr_9fr] gap-12 md:gap-16 items-center">
             
             {/* Left Column - Text Content */}
