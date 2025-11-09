@@ -104,9 +104,10 @@ const handler = async (req: Request): Promise<Response> => {
     }
     
     // Clean up old rate limit records (older than 24 hours)
-    await supabase.rpc('cleanup_old_rate_limits').catch(err => {
-      console.error("Cleanup error (non-critical):", err);
-    });
+    const { error: cleanupError } = await supabase.rpc('cleanup_old_rate_limits');
+    if (cleanupError) {
+      console.error("Cleanup error (non-critical):", cleanupError);
+    }
 
     const rawData = await req.json();
     
